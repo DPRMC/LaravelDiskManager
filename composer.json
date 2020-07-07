@@ -12,5 +12,11 @@
             "name": "Tony Santora",
             "email": "tsantora@deerparkrd.com"
         }
-    ]
+    ],
+    "minimum-stability": "stable",
+    "autoload": {
+        "classmap": [
+            "src/"
+        ]
+    }
 }
