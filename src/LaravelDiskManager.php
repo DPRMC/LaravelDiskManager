@@ -39,14 +39,14 @@ class LaravelDiskManager {
      */
     public function listFiles() : Collection
     {
-        $files = Storage::disk($this->disk)->files();
+        $files = Storage::disk( $this->disk )->files();
         $transformed_files = new Collection();
-        foreach ($files as $file) {
-            $transformed_files->push([
+        foreach ( $files as $file ) {
+            $transformed_files->push( [
                 self::file_name => $file,
-                self::file_size => RemoteFile::humanFileSize(Storage::disk($this->disk)->size($file)),
-                self::last_modified => Carbon::parse(Storage::disk($this->disk)->lastModified($file))->format('m-d-Y')
-            ]);
+                self::file_size => RemoteFile::humanFileSize( Storage::disk( $this->disk )->size( $file ) ),
+                self::last_modified => Carbon::parse( Storage::disk( $this->disk )->lastModified( $file ) )->format( 'm-d-Y g:i A' )
+            ] );
         }
 
         return $transformed_files;
