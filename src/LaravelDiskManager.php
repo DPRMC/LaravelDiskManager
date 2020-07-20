@@ -2,7 +2,6 @@
 
 namespace DPRMC\LaravelDiskManger;
 
-use Carbon\Carbon;
 use Illuminate\Support\Collection;
 use Illuminate\Support\Facades\Storage;
 use MichaelDrennen\RemoteFile\RemoteFile;
@@ -45,7 +44,7 @@ class LaravelDiskManager {
             $transformed_files->push( [
                 self::file_name => $file,
                 self::file_size => RemoteFile::humanFileSize( Storage::disk( $this->disk )->size( $file ) ),
-                self::last_modified => Carbon::parse( Storage::disk( $this->disk )->lastModified( $file ) )->format( 'm-d-Y g:i A' )
+                self::last_modified => Storage::disk( $this->disk )->lastModified( $file )
             ] );
         }
 
