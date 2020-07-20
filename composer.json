@@ -3,7 +3,8 @@
     "description": "List and delete files at a disk location using the Laravel framework",
     "type": "library",
     "require": {
-        "michaeldrennen/remote-file": "^2.0"
+        "michaeldrennen/remote-file": "^2.0",
+        "illuminate/support": "^7.20"
     },
     "license": "MIT",
     "authors": [
