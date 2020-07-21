@@ -1,6 +1,6 @@
 <?php
 
-namespace DPRMC\LaravelDiskManger;
+namespace DPRMC\LaravelDiskManager;
 
 use Illuminate\Support\Collection;
 use Illuminate\Support\Facades\Storage;
