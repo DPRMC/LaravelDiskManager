@@ -1,22 +1,22 @@
 {
-    "name": "dprmc/laravel-disk-manager",
-    "description": "List and delete files at a disk location using the Laravel framework",
-    "type": "library",
-    "require": {
-        "michaeldrennen/remote-file": "^2.0",
-        "illuminate/support": "^6.0 | ^7.0 | ^8.0"
-    },
-    "license": "MIT",
-    "authors": [
-        {
-            "name": "Tony Santora",
-            "email": "tsantora@deerparkrd.com"
-        }
-    ],
-    "minimum-stability": "stable",
-    "autoload": {
-        "classmap": [
-            "src/"
-        ]
+  "name": "dprmc/laravel-disk-manager",
+  "description": "List and delete files at a disk location using the Laravel framework",
+  "type": "library",
+  "require": {
+    "michaeldrennen/remote-file": "^2.0",
+    "illuminate/support": "^6.0|^7.0|^8.0|^9.0|^10.0|^11.0"
+  },
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Tony Santora",
+      "email": "tsantora@deerparkrd.com"
     }
+  ],
+  "minimum-stability": "stable",
+  "autoload": {
+    "classmap": [
+      "src/"
+    ]
+  }
 }
